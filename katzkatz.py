@@ -99,7 +99,7 @@ def parser(input_file):
     try:
         # regex to get each paragraph output
         paragraph_regex = re.compile(
-            r"(?i)\s*(msv|tspkg|wdigest|kerberos|ssp|credman)(:|.*)\n(((\t |\t\t).*\n)+)", flags=re.M)
+            r"(?i)\s*(msv|tspkg|wdigest|kerberos|ssp|credman)(:|.*)\n(((\t |\t\t| {9}).*\n)+)", flags=re.M)
 
         username_regex = re.compile(r"(?i)(?i)\s+Username.* ((?!\(null\)).*)(?!\$)", flags=re.M)
         password_regex = re.compile(r"\s*\*\s+Password\s+:\s+((?!\(null\)).+)\s*(?!\$)", flags=re.M)

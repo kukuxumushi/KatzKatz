@@ -20,7 +20,7 @@ pip3 install -r requirements.txt
 ```
 Second, run the tool with the needed flags:
 ```
-python3 KatzKatz.py -f [FILENAME]
+python3 katzkatz.py -f [FILENAME]
 ```
 
 ## Options to consider
